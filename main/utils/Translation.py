@@ -6,38 +6,24 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 class Language(object):
     class en(object):
         START_TEXT = """
-**👋 Hᴇʏ, {}**\n
-<i>I'm Telegram Files Streaming Bot As Well Direct Links Generator</i>\n
-<i>Click On Help To Get More Information</i>\n
-<b><i><u>Warning 🚸</u></i></b>\n
-<b>🔞 Pron Contents Leads To Permanenet Ban You.</b>"""
+**👋 你好, {}**\n
+<i>Telegram 文件直链机器人</i>\n
+<i>Click On Help To Get More Information</i>"""
 
-        HELP_TEXT = """🔰 **How to Use Me ?**
-
-<i>- Send Me Any File Or Media From Telegram.</i>
-<i>- I Will Provide External Direct Download Link !</i>
-
-**Download Link With Fastest Speed ⚡️**
-
-<b><i><u>Warning 🚸</u></i></b>
-<b>🔞 Pron Contents Leads To Permanenet Ban You.</b></b>\n
-<i>Contact Developer Or Report Bugs</i> <b>: <a href='https://t.me/TechZBots_Support'>[ Click Here ]</a></b>"""
-
-        ABOUT_TEXT = """
-<b>⚜ My Name : TG Direct Link Generator</b>\n
-<b>⚜ Username : @TGDirectLinkGenBot</b>\n
-<b>🔸Version : 1.0</b>\n
-<b>🔹Last Updated : [ 04-Apr-22 ]</b>
+        HELP_TEXT = """ 使用方法
+<i>发送文件以获得直链.</i>
 """
+
+        ABOUT_TEXT = """OK"""
 
         stream_msg_text ="""
 <u>**Successfully Generated Your Link !**</u>\n
-<b>📂 File Name :</b> {}\n
-<b>📦 File Size :</b> {}\n
-<b>📥 Download :</b> {}\n
-<b>🖥 Watch :</b> {}"""
+<b>📂 文件名: </b> {}\n
+<b>📦 文件大小: </b> {}\n
+<b>📥 下载链接: </b> {}\n
+<b>🖥 播放链接: </b> {}"""
 
-        ban_text="__Sᴏʀʀʏ Sɪʀ, Yᴏᴜ ᴀʀᴇ Bᴀɴɴᴇᴅ ᴛᴏ ᴜsᴇ ᴍᴇ.__\n\n**[Cᴏɴᴛᴀᴄᴛ Dᴇᴠᴇʟᴏᴘᴇʀ](https://t.me/TechZBots_Support) Tʜᴇʏ Wɪʟʟ Hᴇʟᴘ Yᴏᴜ**"
+        ban_text="__你已遭到封禁.__"
 
 # ------------------------------------------------------------------------------
 
@@ -47,8 +33,8 @@ class BUTTON(object):
         InlineKeyboardButton('Help', callback_data='help'),
         InlineKeyboardButton('About', callback_data='about')
         ],        
-        [InlineKeyboardButton("Updates Channel", url='https://t.me/TechZBots'),
-        InlineKeyboardButton("Repo", url='https://github.com/TechShreyash/TG-Direct-Link-Generator')]
+        [InlineKeyboardButton("Updates Channel", url='https://google.com'),
+        InlineKeyboardButton("Repo", url='https://google.com')]
         ]
     )
     HELP_BUTTONS = InlineKeyboardMarkup(
